@@ -1,3 +1,30 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-white-color: #F5F4FA;
+    --address-link-color: rgba(255, 255, 255, 0.6);
+    --logo-color: #000000;
+
+    }
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background: var(--primary-white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -11,188 +38,145 @@
     overflow: hidden;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    color: #757575;
-}
-
-ul {
-    list-style: none;
-}
-
-.hat {
-background: #FFFFFF;
-}
-
 .accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: Raleway;
     font-size: 26px;
-    line-height: 31px;
-    color: #212121;
+    line-height: 1.19;
+    color: var(--logo-color);
 }
 
 .logo-white {
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: Raleway;
     font-size: 26px;
-    line-height: 31px;
-    color: #FFFFFF;
+    line-height: 1.19;
+    color: var(--primary-white-color);
 }
 
 .site-nav .link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #212121;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-    color: #2196F3;
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.address-nav .link-nav:hover,
+.address-nav .link-nav:focus,
+.address-nav .link:hover,
+.address-nav .link:focus {
+    color: var(--accent-color);
 }
 
 .site-nav .link.current {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .contacts .link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #757575;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-    color: #2196F3;
-}
-
-.hero {
-    background: #2F303A;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    color: #FFFFFF;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
 }
 
 .button {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    color: #FFFFFF;
-    background-color: #2196F3;
-    border-color: #2196F3;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
     cursor: pointer;
 }
 
-.section {
-    background: #E5E5E5;
-}
-
 .peculiarities .title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #212121;
+    line-height: 1.14;
+    color: var(--title-text-color);
 }
 
 .text {
-    font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 }
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    color: #212121;
-}
-
-.team {
-    background: #F5F4FA;
-}
-
+.section-title,
 .team-title {
-    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    color: #212121;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
 }
 
 .work-list .title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: #212121;
+    line-height: 1.19;
+    color: var(--title-text-color);
 }
 
 .team-text {
     font-size: 16px;
-    line-height: 19px;
-}
-
-.footer {
-    background: #2F303A;
+    line-height: 1.19;
 }
 
 .address-nav .link-nav {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #FFFFFF;
+    line-height: 1.71;
+    color: var(--primary-white-color);
 }
 
 .address-nav .link {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    color: var(--address-link-color);
 }
-/* Стили портфолио */
 
-.section-portf {
-    background: #E5E5E5;
-}
+/* Стили портфолио */
 
 .button-potrf {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    color: #212121;
-    background: #F5F4FA;
-    border-color: #F5F4FA;
-    cursor: pointer;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--title-text-color);
+    background: var(--secondary-white-color);
+    border-color: var(--secondary-white-color);
+    cursor: pointer
 }
 
+.button-menu .button-potrf.active,
 .button-potrf:hover,
 .button-potrf:focus {
-    color: #FFFFFF;
-    background: #2196F3;
-    border-color: #2196F3;
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .content .title {
-    font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
-    color: #212121;
+    line-height: 2;
+    color: var(--title-text-color);
 }
 
 .context {
     font-size: 16px;
-    line-height: 30px;
-
+    line-height: 1.88;
 }
